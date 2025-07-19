@@ -16,7 +16,7 @@ function App() {
   const uniqueID = `${email.trim().toLowerCase()}-${phone.trim()}`;
 
   const handleStart = () => {
-    if (name && email && phone) {
+    if (name && phone) {
       const storedResult = localStorage.getItem(uniqueID);
       if (storedResult && storedResult !== 'pending') {
         setResult(storedResult);
