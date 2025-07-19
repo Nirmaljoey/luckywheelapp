@@ -5,7 +5,7 @@ export const sendToSheet = async (data: {
     phone: string;
     prize: string;
 }) => {
-    const url = 'https://script.google.com/macros/s/AKfycbymfjLtPy8QIWZLY5CABnJF0AmropaLQ4uWt7Cso7EwTQrBEB9IPkWFn2ZIy3QjhGyD/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbwTeSQcM2FeBToD1V50GUtkptjeGCWIqQF97dJ95LHx-NiY8xt4JpneupsHQIKnk37R/exec';
 
     const formData = new URLSearchParams();
     formData.append('Name', data.name);
