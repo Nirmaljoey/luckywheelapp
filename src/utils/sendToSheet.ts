@@ -1,7 +1,7 @@
 // utils/sendToSheet.ts
 export const sendToSheet = async (data: {
     name: string;
-    email: string;
+    email?: string; // email is now optional
     phone: string;
     prize: string;
 }) => {
@@ -9,7 +9,7 @@ export const sendToSheet = async (data: {
 
     const formData = new URLSearchParams();
     formData.append('Name', data.name);
-    formData.append('Email', data.email);
+    formData.append('Email', data.email || ''); // use empty string if undefined
     formData.append('Phone', data.phone);
     formData.append('Prize', data.prize);
 
